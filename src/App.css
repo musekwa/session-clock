@@ -1,0 +1,43 @@
+
+.container {
+  color: white;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.break-length-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+#timer-box {
+  text-align: center;
+  border: 6px solid rgba(255, 255, 255, 0.1);
+  margin: auto;
+  border-radius: 30px;
+  width: 20em;
+  height: 10em;
+}
+
+button span {
+  display: block;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+}
+
+@media (max-width: 500px){
+  .break-length-container {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+}
